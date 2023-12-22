@@ -8,12 +8,10 @@ import {
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { WagmiConfig as EVMDAppProvider } from 'wagmi';
-import { arbitrum, base, celo, linea, mainnet, scroll, zetachainAthensTestnet } from 'wagmi/chains';
 
 import mainBG from '@/assets/images/main-bg.svg';
 import { Toaster } from '@/components/ui/toaster';
 
-import { lightLink } from './chains/light-link';
 import { modeNetwork } from './chains/mode-network';
 import Footer from './components/footer';
 import Navbar from './components/navbar';

@@ -1,4 +1,4 @@
-name: defibuilder-mode
+name: defibuilder-modenetwork
 region: us-east-1
 cloudProvider: genezio
 options:
@@ -7,8 +7,8 @@ sdk:
   language: ts
   path: ../front-end/src/sdk
 frontend:
-  path: ../front-end/dist
-  subdomain: defibuilder-mode
+  path: ../front-end/build
+  subdomain: defibuilder-modenetwork
 scripts:
   preBackendDeploy: npm install --force
   preFrontendDeploy: cd ../front-end && npm install && npm run build

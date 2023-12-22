@@ -12,12 +12,15 @@ export default defineConfig({
   plugins: [
     react(),
     partytownVite({
-      dest: path.join(__dirname, 'dist', '~partytown')
+      dest: path.join(__dirname, 'build', '~partytown')
     })
   ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
     }
+  },
+  build: {
+    outDir: './build'
   }
 });

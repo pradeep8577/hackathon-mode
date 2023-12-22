@@ -7,7 +7,7 @@
 .pnp.js
 
 # production
-front-end/dist
+front-end/build
 front-end/src/sdk
 
 # misc
