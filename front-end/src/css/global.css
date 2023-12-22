@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --base-card-color: 0 0% 100%;
+    --card-foreground-color: 0 0% 3.9%;
+
+    --base-popover-color: 0 0% 100%;
+    --popover-foreground-color: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --base-accent-color: 0 0% 96.1%;
+    --accent-foreground-color: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --base-border-color: 0 0% 89.8%;
+    --border-foreground-color: 0 0% 8%;
+
+    --border-medium-color: 190, 15%, 15%;
+    --card-border-color: 186, 21%, 9%;
+    --active-state-color: 189, 95%, 76%;
+    --card-text-color: 220, 43%, 97%;
+    --title-color: 220, 43%, 97%;
+    --subtitle-color: 220, 43%, 97%, 0.4;
+    --text-color-gray-color: 0, 0%, 27%;
+    --whiteMediumColor: 0, 0%, 98%;
+
+    --input-background-color: 0 0% 89.8%;
+    --focus-ring-color: 0 0% 3.9%;
+
+    --text-color: 220, 43%, 97%, 0.4;
+    --text-color-medium-color: 210, 2%, 41%;
+
+    --base-gradient-color: 220, 43%, 97%;
+    --base-gradient-color-foreground-color: 217, 33%, 59%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --base-card-color: 0 0% 3.9%;
+    --card-foreground-color: 0 0% 98%;
+
+    --base-popover-color: 0 0% 3.9%;
+    --popover-foreground-color: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --base-accent-color: 0 0% 14.9%;
+    --accent-foreground-color: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --base-border-color: 0 0% 14.9%;
+    --input-background-color: 0 0% 14.9%;
+    --focus-ring-color: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  #root {
+    @apply h-full w-full;
+  }
+}
+
+.menu_ic .menu {
+  display: none;
+}
+.cancel_ic .cancel {
+  display: none;
+}
+.hid {
+  display: none;
+}
+.for_centar {
+  right: calc(50% - 510px);
+}
+
+@media screen and (max-width: 1030px) {
+  .for_centar {
+    right: auto;
+    width: 100%;
+  }
+}

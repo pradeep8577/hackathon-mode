@@ -1,0 +1,42 @@
+{
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx genezio local",
+    "lint": "npx eslint --ext ts ./src",
+    "lint:fix": "npx eslint --ext ts ./src --fix",
+    "prettier": "prettier --write ./src/**/*.ts"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^1.1.2",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "genezio": "^0.6.5",
+    "gpt-3-encoder": "^1.1.4",
+    "langchain": "^0.0.203",
+    "mongoose": "^8.0.2",
+    "openai": "^4.20.1",
+    "uuid": "^9.0.1",
+    "vectordb": "^0.1.19",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.22.2"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.1",
+    "@types/node": "^20.10.5",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npx prettier --write",
+      "npx eslint"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Genez-io/genezio-github-action@main
+        with:
+          token: ${{ secrets.GENEZIO_TOKEN }}
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: |
+          npm install && cd genezio-back-end && npm install && cd ../front-end && npm install
+      - name: Lint
+        run: |
+          npm run lint
+      - name: Generate SDK
+        run: |
+          cd genezio-back-end && npx genezio local & 
+          until curl --silent --fail http://localhost:8083/getPrompts; do
+            echo 'Waiting for the server to start...'
+            sleep 1
+          done
+      - name: Build
+        run: |
+          cd front-end && npm run build

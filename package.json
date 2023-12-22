@@ -1,0 +1,27 @@
+{
+	"private": true,
+	"author": {
+		"name": "Doinel Atanasiu",
+		"email": "doinel1atanasiu@gmail.com",
+		"url": "https://business-link.d1a.app"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/doinel1a/vite-react-ts-starter"
+	},
+	"license": "MIT",
+	"scripts": {
+		"lint" : "cd front-end && npm run lint && cd ../genezio-back-end && npm run lint",
+		"prepare": "npx husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0"
+	},
+	"lint-staged": {
+		"front-end/src/**/*.*": "",
+		"genezio-back-end/src/**/*.*": ""
+	}
+}
