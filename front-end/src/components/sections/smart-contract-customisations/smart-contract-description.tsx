@@ -143,7 +143,7 @@ export default function SmartContractDescription() {
   return (
     <div className='flex w-full flex-col'>
       <div className='mb-6 mt-9 sm:mb-9 sm:mt-12'>
-        <h2 className='text-lg font-semibold text-title sm:text-2xl'>Describe Customisation</h2>
+        <h2 className='text-lg font-semibold text-title sm:text-2xl'>Describe Customization</h2>
         <h3 className='text-base font-medium text-subtitle sm:text-lg'>
           Choose customization to add into your {selectedChain} project
         </h3>
@@ -163,7 +163,7 @@ export default function SmartContractDescription() {
           onClose={() => setShowPromptModal(false)}
         />
       )} */}
-      <PromptModal promptsDataState={promptsDataState} selectPrompt={selectPrompt} />
+      {/* <PromptModal promptsDataState={promptsDataState} selectPrompt={selectPrompt} /> */}
       <Textarea
         value={scDescription}
         placeholder='Insert token name, supply and others customisations'

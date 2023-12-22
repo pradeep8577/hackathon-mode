@@ -10,7 +10,7 @@ const CHUNK_OVERLAP = 100;
 const CHUNK_SIZE = 2000;
 
 async function updatePinecone() {
-  const chainData = {
+  const chainData: any = {
     id: '123',
     PINECONE_ENV: '', // update pinceone env
     PINECONE_API_KEY: '',

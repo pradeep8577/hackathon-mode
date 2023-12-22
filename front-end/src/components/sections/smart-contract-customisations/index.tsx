@@ -264,7 +264,7 @@ export default function SmartContractCustomisationSection({
         'audits' in response &&
         Array.isArray(response.audits)
       ) {
-        const audits: IAuditResponse[] = [];
+        const audits: any = [];
 
         for (const audit of response.audits) {
           if (

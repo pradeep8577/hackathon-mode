@@ -1,4 +1,4 @@
-name: eth-india-zeta
+name: defibuilder-mode
 region: us-east-1
 cloudProvider: genezio
 options:
@@ -8,7 +8,7 @@ sdk:
   path: ../front-end/src/sdk
 frontend:
   path: ../front-end/dist
-  subdomain: eth-india-zeta
+  subdomain: defibuilder-mode
 scripts:
   preBackendDeploy: npm install --force
   preFrontendDeploy: cd ../front-end && npm install && npm run build

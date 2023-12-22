@@ -88,10 +88,10 @@ async function createTestDb() {
 
   const directoryPath = 'data-gnz'; // Replace with the path to your directory
   const requiredExts = ['.sol']; // Replace with the required file extensions
-  const chain_id = '5'; // Replace with the required chain_id which mentioned in mongodb
+  const chainId = '5'; // Replace with the required chain_id which mentioned in mongodb
   const extra_flag = ''; // Replace with the not mandatory field extra_flag e.g. near_js
 
-  const chainData = await Chain.findOne({ id: chain_id });
+  const chainData = await Chain.findOne({ id: chainId });
 
   // check if openai api key is set
   if (!openai_api_key) {
@@ -135,11 +135,10 @@ async function createTestDb() {
       await upsert(
         {
           content: chunkedArticles[i].content,
-          content_tokens: chunkedArticles[i].content_tokens,
+          contentTokens: chunkedArticles[i].content_tokens,
           embedding,
         },
         chainData,
-        extra_flag,
       );
 
       setTimeout(() => {}, 500);

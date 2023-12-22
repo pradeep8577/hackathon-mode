@@ -24,17 +24,7 @@ import EStorageKeys from './constants/storage-keys';
 import MultiversXAuthWrapper from './pages/multiversx/wrappers/auth-wrapper';
 import MultiversXDAppProvider from './pages/multiversx/wrappers/dapp-provider';
 
-const chains = [
-  mainnet,
-  arbitrum,
-  base,
-  scroll,
-  zetachainAthensTestnet,
-  celo,
-  linea,
-  lightLink,
-  modeNetwork
-];
+const chains = [modeNetwork];
 const projectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID || '';
 const metadata = {
   name: 'DeFi Builder',

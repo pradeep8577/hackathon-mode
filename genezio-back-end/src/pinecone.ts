@@ -12,7 +12,7 @@ export const upsert = async (
     contentTokens: number;
     embedding: number[];
   },
-  chainData: IChain,
+  chainData: any,
 ) => {
   const pinecone = await initPineconeClient(chainData);
 
