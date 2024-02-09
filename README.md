@@ -78,15 +78,15 @@ VITE_WALLET_CONNECT_PROJECT_ID=''
 1. Clone the ETH-India repository:
 
    ```sh
-   git clone https://github.com/thedefibuilder/eth-india.git
+   git clone https://github.com/pradeep8577/hackathon-mode.git
    ```
 
 2. Navigate to the project directory and install dependencies:
 
    ```sh
-   cd eth-india/genezio-back-end
+   cd hackathon-mode/genezio-back-end
    npm install
-   cd eth-india/front-end
+   cd hackathon-mode/front-end
    npm install
    ```
 
@@ -95,14 +95,14 @@ VITE_WALLET_CONNECT_PROJECT_ID=''
 To use ETH-India Repo, start the local development server:
 
 ```sh
-cd eth-india/genezio-back-end
+cd hackathon-mode/genezio-back-end
 genezio local
 ```
 
 On a new terminal while backend is running
 
 ```sh
-cd eth-india/genezio-back-end
+cd hackathon-mode/genezio-back-end
 npm run dev
 npm run dev
 ```
@@ -112,7 +112,3 @@ Navigate through the platform to create, test, and deploy Ethereum smart contrac
 ## 🔥 Contributing
 
 Contributions are welcome! Please follow the standard fork-and-pull-request workflow to contribute.
-
-## 🧾 License
-
-Defi Builder's AI is released under the CC BY-NC-SA License.
